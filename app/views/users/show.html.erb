@@ -7,9 +7,6 @@
       <div class="card-body">
         <img class="rounded img-fluid" src="<%= gravatar_url(@user, { size: 500 }) %>" alt="">
       </div>
-      <div class: "text-right">
-        <%= link_to "プロフィールを編集する", edit_user_path, class: "btn btn-lg btn-info" %>
-      </div>
     </div>
     <%= render 'relationships/follow_button', user: @user %>
   </aside>
